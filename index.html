@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portal G&amp;A</title>
+<meta name="theme-color" content="#0B3F5E">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Portal G&amp;A">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+  html, body { margin: 0; height: 100%; background: #F1F2F0; }
+  iframe { border: 0; width: 100%; height: 100%; display: block; }
+</style>
+</head>
+<body>
+<!-- Endereço do portal: o link /exec da implantação do Apps Script -->
+<iframe id="portal" title="Portal de Produção" allow="clipboard-write"></iframe>
+<script>
+  var PORTAL = 'https://script.google.com/macros/s/AKfycbxivTeMXJEekFGV8yZdrGRmJzshWpv7ziDEcXuEgB275WAPF-yEpE2ngUr1cWw5hNvZ/exec';
+  // Repassa ?v=saida&k=... para abrir o app de material pelo mesmo endereço
+  document.getElementById('portal').src = PORTAL + location.search;
+</script>
+</body>
+</html>
