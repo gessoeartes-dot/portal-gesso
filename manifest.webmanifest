@@ -1,7 +1,9 @@
 {
+  "id": "./",
   "name": "Portal de Produção · Gesso & Artes",
   "short_name": "Portal G&A",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0B3F5E",
   "theme_color": "#0B3F5E",
